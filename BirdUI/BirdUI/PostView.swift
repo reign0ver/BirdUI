@@ -15,8 +15,31 @@ struct PostView: View {
     // TODO: This should look exactly like Birdie's table view cell.
     // The post text is left-aligned below the mascot image.
     // The image, if any, is horizontally centered in the view.
-    Text("Layout the view for each post.")
+    VStack(alignment: .leading) {
+      HStack {
+        Image("mascot_swift-badge")
+          .resizable()
+          .scaledToFit()
+          .frame(height: 50)
+        VStack(alignment: .leading) {
+          Text(post.userName)
+          Text(post.timestamp.description)
+        }
+      }
+      Text(self.getMessage())
+      Image("octopus")
+      .resizable()
+      .scaledToFit()
+    }
   }
+
+  private func getMessage() -> String {
+    if let message = post.textBody {
+      return message
+    }
+    return ""
+  }
+  
 }
 
 struct PostView_Previews: PreviewProvider {
