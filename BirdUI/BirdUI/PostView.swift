@@ -26,15 +26,20 @@ struct PostView: View {
           Text(post.userName)
           Text(post.timestamp.toString())
         }
+        Spacer()
       }
 
         Text(self.getMessage())
       }
       if self.post.uiImage != nil {
-        Image(uiImage: post.uiImage!)
-          .resizable()
-          .scaledToFit()
-          .frame(height: 150,alignment: .center)
+        HStack {
+          Spacer()
+          Image(uiImage: post.uiImage!)
+            .resizable()
+            .scaledToFit()
+            .frame(height: 150,alignment: .center)
+            Spacer()
+        }
       }
     }
   }

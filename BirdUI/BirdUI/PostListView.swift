@@ -15,19 +15,7 @@ struct PostListView: View {
     // TODO: This should look exactly like the Birdie table view,
     // but with only one button.
     VStack {
-      HStack {
-        Image("mascot_swift-badge")
-          .resizable()
-          .scaledToFit()
-          .frame(height: 50)
-        Spacer()
-        Text("Home")
-          .font(.system(size: 36))
-          .offset(x: -25)
-        Spacer()
-
-      }
-      .padding()
+      HeaderView(title: "Home")
       HStack {
         Button("Create New Post") {
           print("btn pressed.")
