@@ -7,27 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2227AC5F24B9799E0057C207 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2227AC5E24B9799E0057C207 /* AppDelegate.swift */; };
-		2227AC6124B9799E0057C207 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2227AC6024B9799E0057C207 /* SceneDelegate.swift */; };
-		2227AC6324B9799E0057C207 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2227AC6224B9799E0057C207 /* ContentView.swift */; };
-		2227AC6524B979A20057C207 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2227AC6424B979A20057C207 /* Assets.xcassets */; };
-		2227AC6824B979A20057C207 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2227AC6724B979A20057C207 /* Preview Assets.xcassets */; };
-		2227AC6B24B979A20057C207 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2227AC6924B979A20057C207 /* LaunchScreen.storyboard */; };
+		CD7798B924AF0799004D6A6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7798B824AF0799004D6A6B /* AppDelegate.swift */; };
+		CD7798BB24AF0799004D6A6B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7798BA24AF0799004D6A6B /* SceneDelegate.swift */; };
+		CD7798BF24AF079C004D6A6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD7798BE24AF079C004D6A6B /* Assets.xcassets */; };
+		CD7798C224AF079C004D6A6B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD7798C124AF079C004D6A6B /* Preview Assets.xcassets */; };
+		CD7798C524AF079C004D6A6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD7798C324AF079C004D6A6B /* LaunchScreen.storyboard */; };
+		CD7798D124AF0B23004D6A6B /* MediaPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7798CD24AF0B23004D6A6B /* MediaPost.swift */; };
+		CD7798D624B040C9004D6A6B /* NewPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7798D524B040C9004D6A6B /* NewPostView.swift */; };
+		CD7798D824B04BEC004D6A6B /* PostListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7798D724B04BEC004D6A6B /* PostListView.swift */; };
+		CD7798DA24B04C01004D6A6B /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7798D924B04C01004D6A6B /* PostView.swift */; };
+		CD7798DC24B04C1A004D6A6B /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7798DB24B04C1A004D6A6B /* PostViewModel.swift */; };
+		CD7798DE24B05896004D6A6B /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7798DD24B05896004D6A6B /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2227AC5B24B9799E0057C207 /* BirdUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BirdUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2227AC5E24B9799E0057C207 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2227AC6024B9799E0057C207 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2227AC6224B9799E0057C207 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		2227AC6424B979A20057C207 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2227AC6724B979A20057C207 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		2227AC6A24B979A20057C207 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		2227AC6C24B979A20057C207 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD7798B524AF0799004D6A6B /* Birdui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Birdui.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD7798B824AF0799004D6A6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CD7798BA24AF0799004D6A6B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CD7798BE24AF079C004D6A6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD7798C124AF079C004D6A6B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CD7798C424AF079C004D6A6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CD7798C624AF079C004D6A6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD7798CD24AF0B23004D6A6B /* MediaPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaPost.swift; sourceTree = "<group>"; };
+		CD7798D524B040C9004D6A6B /* NewPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostView.swift; sourceTree = "<group>"; };
+		CD7798D724B04BEC004D6A6B /* PostListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListView.swift; sourceTree = "<group>"; };
+		CD7798D924B04C01004D6A6B /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		CD7798DB24B04C1A004D6A6B /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
+		CD7798DD24B05896004D6A6B /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2227AC5824B9799E0057C207 /* Frameworks */ = {
+		CD7798B224AF0799004D6A6B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,40 +47,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2227AC5224B9799E0057C207 = {
+		CD7798AC24AF0799004D6A6B = {
 			isa = PBXGroup;
 			children = (
-				2227AC5D24B9799E0057C207 /* BirdUI */,
-				2227AC5C24B9799E0057C207 /* Products */,
+				CD7798B724AF0799004D6A6B /* Birdui */,
+				CD7798B624AF0799004D6A6B /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		2227AC5C24B9799E0057C207 /* Products */ = {
+		CD7798B624AF0799004D6A6B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2227AC5B24B9799E0057C207 /* BirdUI.app */,
+				CD7798B524AF0799004D6A6B /* Birdui.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2227AC5D24B9799E0057C207 /* BirdUI */ = {
+		CD7798B724AF0799004D6A6B /* Birdui */ = {
 			isa = PBXGroup;
 			children = (
-				2227AC5E24B9799E0057C207 /* AppDelegate.swift */,
-				2227AC6024B9799E0057C207 /* SceneDelegate.swift */,
-				2227AC6224B9799E0057C207 /* ContentView.swift */,
-				2227AC6424B979A20057C207 /* Assets.xcassets */,
-				2227AC6924B979A20057C207 /* LaunchScreen.storyboard */,
-				2227AC6C24B979A20057C207 /* Info.plist */,
-				2227AC6624B979A20057C207 /* Preview Content */,
+				CD7798B824AF0799004D6A6B /* AppDelegate.swift */,
+				CD7798BA24AF0799004D6A6B /* SceneDelegate.swift */,
+				CD7798D724B04BEC004D6A6B /* PostListView.swift */,
+				CD7798D924B04C01004D6A6B /* PostView.swift */,
+				CD7798D524B040C9004D6A6B /* NewPostView.swift */,
+				CD7798DD24B05896004D6A6B /* ImagePicker.swift */,
+				CD7798DB24B04C1A004D6A6B /* PostViewModel.swift */,
+				CD7798CD24AF0B23004D6A6B /* MediaPost.swift */,
+				CD7798BE24AF079C004D6A6B /* Assets.xcassets */,
+				CD7798C324AF079C004D6A6B /* LaunchScreen.storyboard */,
+				CD7798C624AF079C004D6A6B /* Info.plist */,
+				CD7798C024AF079C004D6A6B /* Preview Content */,
 			);
-			path = BirdUI;
+			path = Birdui;
 			sourceTree = "<group>";
 		};
-		2227AC6624B979A20057C207 /* Preview Content */ = {
+		CD7798C024AF079C004D6A6B /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				2227AC6724B979A20057C207 /* Preview Assets.xcassets */,
+				CD7798C124AF079C004D6A6B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -78,39 +93,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2227AC5A24B9799E0057C207 /* BirdUI */ = {
+		CD7798B424AF0799004D6A6B /* Birdui */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2227AC6F24B979A30057C207 /* Build configuration list for PBXNativeTarget "BirdUI" */;
+			buildConfigurationList = CD7798C924AF079C004D6A6B /* Build configuration list for PBXNativeTarget "Birdui" */;
 			buildPhases = (
-				2227AC5724B9799E0057C207 /* Sources */,
-				2227AC5824B9799E0057C207 /* Frameworks */,
-				2227AC5924B9799E0057C207 /* Resources */,
+				CD7798B124AF0799004D6A6B /* Sources */,
+				CD7798B224AF0799004D6A6B /* Frameworks */,
+				CD7798B324AF0799004D6A6B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = BirdUI;
-			productName = BirdUI;
-			productReference = 2227AC5B24B9799E0057C207 /* BirdUI.app */;
+			name = Birdui;
+			productName = Birdui;
+			productReference = CD7798B524AF0799004D6A6B /* Birdui.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2227AC5324B9799E0057C207 /* Project object */ = {
+		CD7798AD24AF0799004D6A6B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1150;
 				LastUpgradeCheck = 1150;
-				ORGANIZATIONNAME = "Andrés Carrillo";
+				ORGANIZATIONNAME = Razeware;
 				TargetAttributes = {
-					2227AC5A24B9799E0057C207 = {
+					CD7798B424AF0799004D6A6B = {
 						CreatedOnToolsVersion = 11.5;
 					};
 				};
 			};
-			buildConfigurationList = 2227AC5624B9799E0057C207 /* Build configuration list for PBXProject "BirdUI" */;
+			buildConfigurationList = CD7798B024AF0799004D6A6B /* Build configuration list for PBXProject "Birdui" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -118,47 +133,52 @@
 				en,
 				Base,
 			);
-			mainGroup = 2227AC5224B9799E0057C207;
-			productRefGroup = 2227AC5C24B9799E0057C207 /* Products */;
+			mainGroup = CD7798AC24AF0799004D6A6B;
+			productRefGroup = CD7798B624AF0799004D6A6B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2227AC5A24B9799E0057C207 /* BirdUI */,
+				CD7798B424AF0799004D6A6B /* Birdui */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2227AC5924B9799E0057C207 /* Resources */ = {
+		CD7798B324AF0799004D6A6B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2227AC6B24B979A20057C207 /* LaunchScreen.storyboard in Resources */,
-				2227AC6824B979A20057C207 /* Preview Assets.xcassets in Resources */,
-				2227AC6524B979A20057C207 /* Assets.xcassets in Resources */,
+				CD7798C524AF079C004D6A6B /* LaunchScreen.storyboard in Resources */,
+				CD7798C224AF079C004D6A6B /* Preview Assets.xcassets in Resources */,
+				CD7798BF24AF079C004D6A6B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2227AC5724B9799E0057C207 /* Sources */ = {
+		CD7798B124AF0799004D6A6B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2227AC5F24B9799E0057C207 /* AppDelegate.swift in Sources */,
-				2227AC6124B9799E0057C207 /* SceneDelegate.swift in Sources */,
-				2227AC6324B9799E0057C207 /* ContentView.swift in Sources */,
+				CD7798B924AF0799004D6A6B /* AppDelegate.swift in Sources */,
+				CD7798D124AF0B23004D6A6B /* MediaPost.swift in Sources */,
+				CD7798DA24B04C01004D6A6B /* PostView.swift in Sources */,
+				CD7798BB24AF0799004D6A6B /* SceneDelegate.swift in Sources */,
+				CD7798D624B040C9004D6A6B /* NewPostView.swift in Sources */,
+				CD7798DE24B05896004D6A6B /* ImagePicker.swift in Sources */,
+				CD7798DC24B04C1A004D6A6B /* PostViewModel.swift in Sources */,
+				CD7798D824B04BEC004D6A6B /* PostListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2227AC6924B979A20057C207 /* LaunchScreen.storyboard */ = {
+		CD7798C324AF079C004D6A6B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2227AC6A24B979A20057C207 /* Base */,
+				CD7798C424AF079C004D6A6B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -166,7 +186,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		2227AC6D24B979A20057C207 /* Debug */ = {
+		CD7798C724AF079C004D6A6B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -226,7 +246,7 @@
 			};
 			name = Debug;
 		};
-		2227AC6E24B979A20057C207 /* Release */ = {
+		CD7798C824AF079C004D6A6B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -280,40 +300,40 @@
 			};
 			name = Release;
 		};
-		2227AC7024B979A30057C207 /* Debug */ = {
+		CD7798CA24AF079C004D6A6B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"BirdUI/Preview Content\"";
-				DEVELOPMENT_TEAM = 5JCAK89HM7;
+				DEVELOPMENT_ASSET_PATHS = "\"Birdui/Preview Content\"";
+				DEVELOPMENT_TEAM = 35ERK77LXE;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = BirdUI/Info.plist;
+				INFOPLIST_FILE = Birdui/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.andres.BirdUI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.raywenderlich.Birdui;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		2227AC7124B979A30057C207 /* Release */ = {
+		CD7798CB24AF079C004D6A6B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"BirdUI/Preview Content\"";
-				DEVELOPMENT_TEAM = 5JCAK89HM7;
+				DEVELOPMENT_ASSET_PATHS = "\"Birdui/Preview Content\"";
+				DEVELOPMENT_TEAM = 35ERK77LXE;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = BirdUI/Info.plist;
+				INFOPLIST_FILE = Birdui/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.andres.BirdUI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.raywenderlich.Birdui;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -323,25 +343,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2227AC5624B9799E0057C207 /* Build configuration list for PBXProject "BirdUI" */ = {
+		CD7798B024AF0799004D6A6B /* Build configuration list for PBXProject "Birdui" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2227AC6D24B979A20057C207 /* Debug */,
-				2227AC6E24B979A20057C207 /* Release */,
+				CD7798C724AF079C004D6A6B /* Debug */,
+				CD7798C824AF079C004D6A6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2227AC6F24B979A30057C207 /* Build configuration list for PBXNativeTarget "BirdUI" */ = {
+		CD7798C924AF079C004D6A6B /* Build configuration list for PBXNativeTarget "Birdui" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2227AC7024B979A30057C207 /* Debug */,
-				2227AC7124B979A30057C207 /* Release */,
+				CD7798CA24AF079C004D6A6B /* Debug */,
+				CD7798CB24AF079C004D6A6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 2227AC5324B9799E0057C207 /* Project object */;
+	rootObject = CD7798AD24AF0799004D6A6B /* Project object */;
 }
