@@ -15,7 +15,8 @@ struct PostView: View {
     // TODO: This should look exactly like Birdie's table view cell.
     // The post text is left-aligned below the mascot image.
     // The image, if any, is horizontally centered in the view.
-    VStack(alignment: .leading) {
+    VStack {
+      VStack(alignment: .leading) {
       HStack {
         Image("mascot_swift-badge")
           .resizable()
@@ -26,10 +27,15 @@ struct PostView: View {
           Text(post.timestamp.toString())
         }
       }
-      Text(self.getMessage())
-      Image("octopus")
-      .resizable()
-      .scaledToFit()
+
+        Text(self.getMessage())
+      }
+      if self.post.uiImage != nil {
+        Image(uiImage: post.uiImage!)
+          .resizable()
+          .scaledToFit()
+          .frame(height: 150,alignment: .center)
+      }
     }
   }
 
@@ -45,7 +51,7 @@ struct PostView: View {
 struct PostView_Previews: PreviewProvider {
   static var previews: some View {
     PostView(post: MediaPost(textBody: "Went to the Aquarium today :]",
-      userName: "Audrey", timestamp: Date(timeIntervalSinceNow: -9876),
-      uiImage: UIImage(named: "octopus")))
+                             userName: "Audrey", timestamp: Date(timeIntervalSinceNow: -9876),
+                             uiImage: UIImage(named: "octopus")))
   }
 }

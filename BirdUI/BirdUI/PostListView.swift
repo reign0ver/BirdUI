@@ -14,7 +14,7 @@ struct PostListView: View {
   var body: some View {
     // TODO: This should look exactly like the Birdie table view,
     // but with only one button.
-    VStack(alignment:.leading, spacing: 10) {
+    VStack {
       HStack {
         Image("mascot_swift-badge")
           .resizable()
