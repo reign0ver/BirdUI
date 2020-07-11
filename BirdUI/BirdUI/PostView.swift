@@ -23,7 +23,7 @@ struct PostView: View {
           .frame(height: 50)
         VStack(alignment: .leading) {
           Text(post.userName)
-          Text(post.timestamp.description)
+          Text(post.timestamp.toString())
         }
       }
       Text(self.getMessage())

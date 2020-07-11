@@ -22,23 +22,25 @@ struct PostListView: View {
           .frame(height: 50)
         Spacer()
         Text("Home")
-          .font(.system(size: 44))
+          .font(.system(size: 36))
           .offset(x: -25)
         Spacer()
 
       }
+      .padding()
       HStack {
         Button("Create New Post") {
           print("btn pressed.")
         }
+        .padding(.bottom)
         Spacer()
       }
+      .padding(.horizontal)
       List(posts.posts) { post in
-        Text(post.textBody!)
+        PostView(post: post)
       }
       Spacer()
     }
-    .padding()
   }
 }
 
