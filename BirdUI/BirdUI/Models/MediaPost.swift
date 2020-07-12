@@ -15,4 +15,11 @@ struct MediaPost: Identifiable {
   let timestamp: Date
   let uiImage: UIImage?
   var liked = false
+
+}
+
+extension MediaPost: Hashable {
+  func hash(into hasher: inout Hasher) {
+      hasher.combine(id)
+  }
 }

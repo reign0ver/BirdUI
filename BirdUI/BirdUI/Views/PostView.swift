@@ -31,7 +31,9 @@ struct PostView: View {
         }
 
         Text(self.getMessage())
+          .layoutPriority(1)
       }
+      .fixedSize(horizontal: false, vertical: true)
       if self.post.uiImage != nil {
         HStack {
           Spacer()
@@ -50,8 +52,7 @@ struct PostView: View {
         }) {
           Image(systemName: "heart.fill")
             .foregroundColor(self.post.liked ? .red : Color(UIColor.systemGray))
-            .scaleEffect(self.post.liked ? 1.3 : 1.0)
-            .animation(.linear)
+            .scaleEffect(self.post.liked ? 1.1 : 1.0)
         }
       }
       .padding()
