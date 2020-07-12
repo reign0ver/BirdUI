@@ -10,15 +10,18 @@ import SwiftUI
 
 struct PostListView: View {
   @ObservedObject var viewModel: PostViewModel = PostViewModel()
+  
+  @State private var isPresented = false
 
   var body: some View {
-    // TODO: This should look exactly like the Birdie table view,
+    // TODO: This should look exactly like the Birdie table view
     // but with only one button.
     VStack {
       HeaderView(title: "Home")
       HStack {
         Button("Create New Post") {
           print("btn pressed.")
+          self.isPresented = true
         }
         .padding(.bottom)
         Spacer()
@@ -28,15 +31,14 @@ struct PostListView: View {
         PostView(post: post, viewModel: self.viewModel)
       }
       Spacer()
+    }.sheet(isPresented: $isPresented) {
+        NewPostView(postHandler: self.viewModel)
     }
-    Text("Layout header, new-post button, List of posts")
   }
 }
 
 struct PostListView_Previews: PreviewProvider {
-  static var previews: some View {
-    NavigationView {
-      PostListView(viewModel: PostViewModel())
+    static var previews: some View {
+        PostListView(viewModel: PostViewModel())
     }
-  }
 }
