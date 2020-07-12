@@ -29,6 +29,7 @@ struct PostListView: View {
       }
       Spacer()
     }
+    Text("Layout header, new-post button, List of posts")
   }
 }
 
