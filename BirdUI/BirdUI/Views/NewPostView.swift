@@ -7,11 +7,13 @@
 //
 
 import SwiftUI
+import Combine
 
 struct NewPostView: View {
   var postHandler: PostViewModel
   @Environment(\.presentationMode) var presentationMode
-  
+
+  @State private var keyboardHeight: CGFloat = 0
   @State var username: String = ""
   @State var postText: String = ""
   @State var showImagePicker = false
@@ -48,7 +50,10 @@ struct NewPostView: View {
         .disabled(username.isEmpty && postText.isEmpty)
       }
       .padding()
+      .padding(.bottom, keyboardHeight)
+      .animation(.default)
     }
+    .onReceive(Publishers.keyboardHeight) { self.keyboardHeight = $0 }
     .sheet(isPresented: $showImagePicker) {
         ImagePicker(image: self.$uiImage)
     }
