@@ -30,15 +30,16 @@ struct PostListView: View {
       List(viewModel.posts) { post in
         PostView(post: post, viewModel: self.viewModel)
       }
+      .buttonStyle(BorderlessButtonStyle())
       Spacer()
     }.sheet(isPresented: $isPresented) {
-        NewPostView(postHandler: self.viewModel)
+      NewPostView(postHandler: self.viewModel)
     }
   }
 }
 
 struct PostListView_Previews: PreviewProvider {
-    static var previews: some View {
-        PostListView(viewModel: PostViewModel())
-    }
+  static var previews: some View {
+    PostListView(viewModel: PostViewModel())
+  }
 }
