@@ -9,6 +9,7 @@
 import SwiftUI
 
 class PostViewModel: ObservableObject {
+  
   @Published var posts: [MediaPost] = []
   
   init() {
@@ -24,6 +25,7 @@ class PostViewModel: ObservableObject {
       posts.append(post)
       posts = posts.sorted(by: { $0.timestamp > $1.timestamp })
   }
+  
   func set(like: Bool, to post: MediaPost) {
     if let index = posts.firstIndex(where: { $0.id == post.id }) {
       posts[index].liked = like

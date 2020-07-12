@@ -24,7 +24,7 @@
 
 /* Begin PBXFileReference section */
 		691BC50D24B9A1C8000F386D /* Extension+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Extension+Date.swift"; path = "BirdUI/Extension+Date.swift"; sourceTree = SOURCE_ROOT; };
-		694086BF24B9E5B800A1E125 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HeaderView.swift; path = BirdUI/HeaderView.swift; sourceTree = SOURCE_ROOT; };
+		694086BF24B9E5B800A1E125 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HeaderView.swift; path = Birdui/Views/HeaderView.swift; sourceTree = SOURCE_ROOT; };
 		CD7798B524AF0799004D6A6B /* Birdui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Birdui.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD7798B824AF0799004D6A6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD7798BA24AF0799004D6A6B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +51,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22C040A024BACCFF00AB45AE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CD7798D724B04BEC004D6A6B /* PostListView.swift */,
+				694086BF24B9E5B800A1E125 /* HeaderView.swift */,
+				CD7798D524B040C9004D6A6B /* NewPostView.swift */,
+				CD7798D924B04C01004D6A6B /* PostView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		22C040A124BACD2700AB45AE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CD7798CD24AF0B23004D6A6B /* MediaPost.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		22C040A224BACD3000AB45AE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CD7798DB24B04C1A004D6A6B /* PostViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		CD7798AC24AF0799004D6A6B = {
 			isa = PBXGroup;
 			children = (
@@ -70,15 +97,12 @@
 		CD7798B724AF0799004D6A6B /* Birdui */ = {
 			isa = PBXGroup;
 			children = (
+				22C040A224BACD3000AB45AE /* ViewModels */,
+				22C040A124BACD2700AB45AE /* Models */,
+				22C040A024BACCFF00AB45AE /* Views */,
 				CD7798B824AF0799004D6A6B /* AppDelegate.swift */,
 				CD7798BA24AF0799004D6A6B /* SceneDelegate.swift */,
-				CD7798D724B04BEC004D6A6B /* PostListView.swift */,
-				694086BF24B9E5B800A1E125 /* HeaderView.swift */,
-				CD7798D924B04C01004D6A6B /* PostView.swift */,
-				CD7798D524B040C9004D6A6B /* NewPostView.swift */,
 				CD7798DD24B05896004D6A6B /* ImagePicker.swift */,
-				CD7798DB24B04C1A004D6A6B /* PostViewModel.swift */,
-				CD7798CD24AF0B23004D6A6B /* MediaPost.swift */,
 				691BC50D24B9A1C8000F386D /* Extension+Date.swift */,
 				CD7798BE24AF079C004D6A6B /* Assets.xcassets */,
 				CD7798C324AF079C004D6A6B /* LaunchScreen.storyboard */,
@@ -131,7 +155,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CD7798B024AF0799004D6A6B /* Build configuration list for PBXProject "BirdUI" */;
+			buildConfigurationList = CD7798B024AF0799004D6A6B /* Build configuration list for PBXProject "Birdui" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -351,7 +375,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CD7798B024AF0799004D6A6B /* Build configuration list for PBXProject "BirdUI" */ = {
+		CD7798B024AF0799004D6A6B /* Build configuration list for PBXProject "Birdui" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CD7798C724AF079C004D6A6B /* Debug */,
