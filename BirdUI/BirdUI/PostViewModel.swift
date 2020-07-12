@@ -13,8 +13,8 @@ class PostViewModel: ObservableObject {
   
   init() {
     let imagePost1 = MediaPost(textBody: "I love debugging software!", userName: "Jay", timestamp: Date(timeIntervalSinceNow: -123456), uiImage: UIImage(named: "chop"))
-    let imagePost2 = MediaPost(textBody: "Went to the Aquarium today :]", userName: "Audrey", timestamp: Date(timeIntervalSinceNow: -9876), uiImage: UIImage(named:  "octopus"))
-    let textPost1 = MediaPost(textBody: "Hello World!", userName: "Bhagat", timestamp: Date(timeIntervalSinceNow: -67890), uiImage: nil)
+    let imagePost2 = MediaPost(textBody: "Went to the Aquarium today :]", userName: "Audrey", timestamp: Date(timeIntervalSinceNow: -9876), uiImage: UIImage(named:  "octopus"),liked: true)
+    let textPost1 = MediaPost(textBody: "Hello World!", userName: "Bhagat", timestamp: Date(timeIntervalSinceNow: -67890), uiImage: nil, liked: true)
     let textPost2 = MediaPost(textBody: "This is my favorite social media app! This is my favorite social media app! This is my favorite social media app!", userName: "Jeff", timestamp: Date(timeIntervalSinceNow: -2345), uiImage: nil)
     
     posts = [imagePost1, imagePost2, textPost1, textPost2].sorted(by: { $0.timestamp > $1.timestamp })
@@ -23,5 +23,10 @@ class PostViewModel: ObservableObject {
   func addPost(post: MediaPost) {
       posts.append(post)
       posts = posts.sorted(by: { $0.timestamp > $1.timestamp })
+  }
+  func set(like: Bool, to post: MediaPost) {
+    if let index = posts.firstIndex(where: { $0.id == post.id }) {
+      posts[index].liked = like
+    }
   }
 }

@@ -10,6 +10,7 @@ import SwiftUI
 
 struct PostView: View {
   let post: MediaPost
+  let viewModel: PostViewModel
   
   var body: some View {
     // TODO: This should look exactly like Birdie's table view cell.
@@ -17,17 +18,17 @@ struct PostView: View {
     // The image, if any, is horizontally centered in the view.
     VStack {
       VStack(alignment: .leading) {
-      HStack {
-        Image("mascot_swift-badge")
-          .resizable()
-          .scaledToFit()
-          .frame(height: 50)
-        VStack(alignment: .leading) {
-          Text(post.userName)
-          Text(post.timestamp.toString())
+        HStack {
+          Image("mascot_swift-badge")
+            .resizable()
+            .scaledToFit()
+            .frame(height: 50)
+          VStack(alignment: .leading) {
+            Text(post.userName)
+            Text(post.timestamp.toString())
+          }
+          Spacer()
         }
-        Spacer()
-      }
 
         Text(self.getMessage())
       }
@@ -38,9 +39,22 @@ struct PostView: View {
             .resizable()
             .scaledToFit()
             .frame(height: 150,alignment: .center)
-            Spacer()
+          Spacer()
         }
       }
+      HStack {
+        Spacer()
+        Button(action: {
+          print("JD: - starred")
+          self.viewModel.set(like: !self.post.liked, to: self.post)
+        }) {
+          Image(systemName: "heart.fill")
+            .foregroundColor(self.post.liked ? .red : Color(UIColor.systemGray))
+            .scaleEffect(self.post.liked ? 1.3 : 1.0)
+            .animation(.linear)
+        }
+      }
+      .padding()
     }
   }
 
@@ -50,6 +64,7 @@ struct PostView: View {
     }
     return ""
   }
+
   
 }
 
@@ -57,6 +72,6 @@ struct PostView_Previews: PreviewProvider {
   static var previews: some View {
     PostView(post: MediaPost(textBody: "Went to the Aquarium today :]",
                              userName: "Audrey", timestamp: Date(timeIntervalSinceNow: -9876),
-                             uiImage: UIImage(named: "octopus")))
+                             uiImage: UIImage(named: "octopus")), viewModel: PostViewModel())
   }
 }

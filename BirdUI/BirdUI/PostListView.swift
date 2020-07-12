@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct PostListView: View {
-  @ObservedObject var posts: PostViewModel = PostViewModel()
+  @ObservedObject var viewModel: PostViewModel = PostViewModel()
 
   var body: some View {
     // TODO: This should look exactly like the Birdie table view,
@@ -24,8 +24,8 @@ struct PostListView: View {
         Spacer()
       }
       .padding(.horizontal)
-      List(posts.posts) { post in
-        PostView(post: post)
+      List(viewModel.posts) { post in
+        PostView(post: post, viewModel: self.viewModel)
       }
       Spacer()
     }
@@ -35,7 +35,7 @@ struct PostListView: View {
 struct PostListView_Previews: PreviewProvider {
   static var previews: some View {
     NavigationView {
-      PostListView(posts: PostViewModel())
+      PostListView(viewModel: PostViewModel())
     }
   }
 }
